@@ -20,7 +20,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import SeatLayout from "../../components/booking/SeatLayout";
+import SeatLayout from "../../components/booking/seatLayout";
 import { busService } from "../../services/busService";
 
 const PLATFORM_FEE = 20;
@@ -392,12 +392,12 @@ const SeatSelection = () => {
           <div className="grid gap-8 lg:grid-cols-3">
             {/* Seat Layout */}
             <div className="lg:col-span-2">
-            <SeatLayout
-  selectedSeats={selectedSeats}
-  setSelectedSeats={setSelectedSeats}
-  bookedSeats={bookedSeats}
-  seatFare={seatPrice}
-/>
+              <SeatLayout
+                selectedSeats={selectedSeats}
+                setSelectedSeats={setSelectedSeats}
+                bookedSeats={bookedSeats}
+                seatFare={seatPrice}
+              />
             </div>
 
             {/* Summary */}
